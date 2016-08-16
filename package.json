@@ -10,10 +10,9 @@
   },
   "license": "MIT",
   "files": [
-    "LICENSE",
     "index.js",
-    "lib/",
-    "utils.js"
+    "lib",
+    "LICENSE"
   ],
   "main": "index.js",
   "engines": {
@@ -22,10 +21,6 @@
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [
-    "has",
-    "updates"
-  ],
   "dependencies": {
     "background-process": "^0.1.0",
     "data-store": "^0.16.1",
@@ -34,5 +29,9 @@
     "get-pkg": "^0.3.0",
     "lazy-cache": "^2.0.1",
     "semver": "^5.3.0"
-  }
+  },
+  "keywords": [
+    "has",
+    "updates"
+  ]
 }
