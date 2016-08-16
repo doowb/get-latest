@@ -3,7 +3,24 @@
 var path = require('path');
 var utils = require('./lib/utils');
 
-module.exports = function(pkg, options) {
+/**
+ * Get the latest `package.json` for the specified package.json and given options.
+ *
+ * This library will use the given package.json to determine if it's the latest one or if there is a newer version.
+ * If the given package.json is the latest, then it is returned.
+ *
+ * ```js
+ * var latest = getLatest(require('./package.json'));
+ * ```
+ * @param  {Object} `pkg` Current package.json to use for checking for the latest.
+ * @param  {Object} `options` Additional options to control how the checking is handled.
+ * @param  {String} `options.timespan` String used to determine if the background process should be started to npm for the latest version. Defaults to '1 hour ago'.
+ * @param  {Boolean} `options.cache` Set to `false` to ensure that the background process is always started.
+ * @return {Object} Latest package.json is returned.
+ * @api public
+ */
+
+module.exports = function getLatest(pkg, options) {
   if (typeof pkg !== 'object') {
     throw TypeError('expected "pkg" to be an object');
   }
@@ -22,7 +39,7 @@ module.exports = function(pkg, options) {
   var latest = store.get(pkg.name) || {};
 
   if (!cached(dates, pkg, opts)) {
-    utils.background.start(path.join(__dirname, 'lib/check.js'), opts);
+    utils.background.start(path.join(__dirname, 'lib/worker.js'), opts);
   }
 
   if (!utils.semver.valid(latest.version)) {
