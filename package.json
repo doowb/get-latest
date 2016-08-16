@@ -1,12 +1,12 @@
 {
-  "name": "has-updates",
-  "description": "Check to see if an npm package has updated versions.",
+  "name": "get-latest",
+  "description": "Get the latest npm package information.",
   "version": "0.1.0",
-  "homepage": "https://github.com/doowb/has-updates",
+  "homepage": "https://github.com/doowb/get-latest",
   "author": "Brian Woodward (https://github.com/doowb)",
-  "repository": "doowb/has-updates",
+  "repository": "doowb/get-latest",
   "bugs": {
-    "url": "https://github.com/doowb/has-updates/issues"
+    "url": "https://github.com/doowb/get-latest/issues"
   },
   "license": "MIT",
   "files": [

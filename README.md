@@ -1,18 +1,18 @@
-# has-updates [![NPM version](https://badge.fury.io/js/has-updates.svg)](https://npmjs.org/package/has-updates) [![Build Status](https://travis-ci.org/doowb/has-updates.svg?branch=master)](https://travis-ci.org/doowb/has-updates)
+# get-latest [![NPM version](https://badge.fury.io/js/get-latest.svg)](https://npmjs.org/package/get-latest) [![Build Status](https://travis-ci.org/doowb/get-latest.svg?branch=master)](https://travis-ci.org/doowb/get-latest)
 
 > Check to see if an npm package has updated versions.
 
 ## Installation
 
 ```sh
-$ npm install --save has-updates
+$ npm install --save get-latest
 ```
 
 ## Usage
 
 ```js
-var hasUpdates = require('has-updates');
-hasUpdates();
+var getLatest = require('get-latest');
+getLatest();
 ```
 
 ## License
