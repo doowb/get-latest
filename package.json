@@ -1,6 +1,6 @@
 {
   "name": "get-latest",
-  "description": "Get the latest npm package information.",
+  "description": "Get the latest package.json for a module.",
   "version": "0.1.0",
   "homepage": "https://github.com/doowb/get-latest",
   "author": "Brian Woodward (https://github.com/doowb)",
@@ -30,15 +30,22 @@
     "lazy-cache": "^2.0.1",
     "semver": "^5.3.0"
   },
-  "keywords": [
-    "has",
-    "updates"
-  ],
   "devDependencies": {
     "gulp-format-md": "^0.1.10",
     "mocha": "^3.0.2",
     "yargs-parser": "^3.2.0"
   },
+  "keywords": [
+    "get",
+    "latest",
+    "module",
+    "newer",
+    "newest",
+    "npm",
+    "package",
+    "updated",
+    "version"
+  ],
   "verb": {
     "toc": false,
     "layout": "default",
