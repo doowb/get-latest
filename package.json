@@ -59,7 +59,13 @@
       "reflinks": true
     },
     "related": {
-      "list": []
+      "highlight": "get-pkg",
+      "list": [
+        "background-process",
+        "data-store",
+        "date-store",
+        "get-pkg"
+      ]
     },
     "reflinks": [
       "verb",

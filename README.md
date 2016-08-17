@@ -1,6 +1,8 @@
 # get-latest [![NPM version](https://img.shields.io/npm/v/get-latest.svg?style=flat)](https://www.npmjs.com/package/get-latest) [![NPM downloads](https://img.shields.io/npm/dm/get-latest.svg?style=flat)](https://npmjs.org/package/get-latest) [![Build Status](https://img.shields.io/travis/doowb/get-latest.svg?style=flat)](https://travis-ci.org/doowb/get-latest)
 
-Get the latest npm package information.
+Get the latest package.json for a module.
+
+You might also be interested in [get-pkg](https://github.com/jonschlinkert/get-pkg).
 
 ## Install
 
@@ -54,6 +56,13 @@ var latest = getLatest(require('./package.json'));
 ```
 
 ## About
+
+### Related projects
+
+* [background-process](https://www.npmjs.com/package/background-process): Run a process in the background, disconnected from the main process. | [homepage](https://github.com/doowb/background-process "Run a process in the background, disconnected from the main process.")
+* [data-store](https://www.npmjs.com/package/data-store): Easily get, set and persist config data. | [homepage](https://github.com/jonschlinkert/data-store "Easily get, set and persist config data.")
+* [date-store](https://www.npmjs.com/package/date-store): Easily persist or get stored dates/times. Useful for conditionally making updates in an application based… [more](https://github.com/jonschlinkert/date-store) | [homepage](https://github.com/jonschlinkert/date-store "Easily persist or get stored dates/times. Useful for conditionally making updates in an application based on the amount of time that has passed.")
+* [get-pkg](https://www.npmjs.com/package/get-pkg): Get the package.json for a project from npm. | [homepage](https://github.com/jonschlinkert/get-pkg "Get the package.json for a project from npm.")
 
 ### Contributing
 
